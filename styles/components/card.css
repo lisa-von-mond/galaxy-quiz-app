@@ -12,10 +12,13 @@
   margin-top: 40px;
   margin-bottom: 20px;
   position: relative;
-}
-
-.first {
-  margin-top: 180px;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    35deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(120, 9, 121, 0.4598214285714286) 0%,
+    rgba(0, 212, 255, 0.2) 100%
+  );
 }
 
 .card-bookmark {
@@ -23,40 +26,53 @@
 
 .show-answer-button {
   display: flex;
+  flex-direction: column;
   justify-content: center;
-  padding-bottom: 30px;
+  align-items: center;
+  border: var(--testborder) solid yellow;
+  padding-top: 1.2rem;
+  padding-bottom: 1.2rem;
 }
 
 .show-answer-button button {
-  background-color: var(--acccolor);
-  color: var(--darkcolor);
+  background-color: var(--);
+  color: var(--acccolor);
   text-transform: uppercase;
-  font-size: 14px;
-  height: 40px;
-  border-radius: 30px;
+  font-size: 1rem;
+  height: 3rem;
+  border-radius: 1.2rem;
+  padding: 0.7rem;
+  box-shadow: 0px 0px 8px 2px orange;
 }
 
 .tags {
-  min-height: 100px;
+  min-height: 2rem;
   display: flex;
   flex-wrap: wrap;
-  justify-content: space-between;
+  flex-direction: row;
+  justify-content: flex-start;
   gap: 6px;
+  border: var(--testborder) solid green;
 }
 
 .tag {
   background-color: black;
-  font-size: 13px;
-  height: 20px;
+  display: flex;
+  padding: 0.5rem;
+  height: 1.5rem;
   color: var(--favcolor);
   border: var(--border) solid var(--favcolor);
-  padding: 11px 14px 9px 14px;
-  border-radius: 20px;
+  border-radius: 2rem;
+}
+
+.question-text {
+  border: var(--testborder) solid blue;
 }
 
 .question-text p {
   font-size: 14px;
   color: var(--favcolor);
+  margin-bottom: 0;
 }
 
 .question-text h2 {
@@ -65,7 +81,6 @@
 }
 
 .third {
-  background-image: url("images/stars.jpg");
   background-size: cover;
 }
 
