@@ -1,0 +1,48 @@
+@import url("https://fonts.googleapis.com/css2?family=DM+Sans:ital,wght@0,400;0,500;0,700;1,400;1,500;1,700&display=swap");
+@import url("/styles/components/card.css");
+
+:root {
+  --favcolor: blanchedalmond;
+  --acccolor: hotpink;
+  --darkcolor: black;
+  --border: 2px;
+}
+
+body {
+  background-color: var(--darkcolor);
+  color: hotpink;
+  font-family: "DM Sans", sans-serif;
+}
+
+.grid {
+  display: grid;
+  grid-template-columns: 1fr 4fr 1fr;
+}
+
+header {
+  position: fixed;
+  height: 80px;
+  width: 100%;
+  padding: 20px;
+  background-color: var(--darkcolor);
+  margin: 0px;
+}
+
+footer {
+  position: fixed;
+  font-size: 30px;
+  display: flex;
+  justify-content: space-evenly;
+  padding: 20px 10px 30px 10px;
+}
+
+main {
+  display: flex;
+  flex-direction: column;
+  gap: 40px;
+  padding: 20px;
+}
+
+h1 {
+  text-shadow: ;
+}
