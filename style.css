@@ -135,14 +135,15 @@ header {
     grid-column-start: 1;
     grid-column-end: 2;
     width: 60%;
-    border-radius: 40px;
+    aspect-ratio: 1;
+    border-radius: 50%;
     display: flex;
+    flex-direction: column;
     justify-content: center;
     margin-top: 2vw;
     margin-left: 3vw;
     margin-right: 3vw;
-    padding: 1.5vw;
-    stretch: 1;
+    padding: 1.7vw 2.2vw 1vw 2.2vw;
     text-align: center;
   }
 
