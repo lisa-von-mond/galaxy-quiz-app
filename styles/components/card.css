@@ -30,11 +30,11 @@
   justify-content: center;
   align-items: center;
   border: var(--testborder) solid yellow;
-  padding-top: 1.2rem;
-  padding-bottom: 1.2rem;
+  padding-top: 1.6rem;
+  padding-bottom: 1.6rem;
 }
 
-.show-answer-button button {
+button {
   background-color: var(--);
   color: var(--acccolor);
   text-transform: uppercase;
@@ -59,25 +59,38 @@
   background-color: black;
   display: flex;
   padding: 0.5rem;
-  height: 1.5rem;
+  height: 2.5rem;
   color: var(--favcolor);
   border: var(--border) solid var(--favcolor);
   border-radius: 2rem;
 }
 
-.question-text {
-  border: var(--testborder) solid blue;
-}
-
-.question-text p {
-  font-size: 14px;
+h2 {
   color: var(--favcolor);
   margin-bottom: 0;
+  margin-top: 1.5rem;
 }
 
-.question-text h2 {
-  margin-top: 0px;
+.question-text {
+  border: var(--testborder) solid blue;
   color: var(--favcolor);
+  margin-bottom: 0;
+  margin-top: 1.5rem;
+}
+
+.answer-text-hidden {
+  display: none;
+}
+
+.answer-text {
+  border: var(--testborder) solid blue;
+  color: var(--favcolor);
+  margin-bottom: 2rem;
+}
+
+p {
+  font-size: 14px;
+  line-height: 20px;
 }
 
 .third {
@@ -94,6 +107,23 @@
   font-size: 40px;
   background-color: black;
   border: var(--border) solid var(--bmcolor);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  box-shadow: 0px 0px 8px 2px orange;
+}
+
+.bookmarked {
+  color: var(--acccolor);
+  height: 60px;
+  width: 60px;
+  position: absolute;
+  top: -8%;
+  left: 80%;
+  font-size: 40px;
+  background-color: var(--darkcolor);
+  border: var(--border) solid var(--acccolor);
   display: flex;
   justify-content: center;
   align-items: center;
