@@ -45,6 +45,12 @@ h2 {
   font-size: 2rem;
 }
 
+
+h3 {
+  margin: 0;
+  padding: 0;
+}
+
 .light-text {
   color: var(--favcolor);
 }
