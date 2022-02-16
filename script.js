@@ -1,20 +1,17 @@
-let answerTextOne = document.querySelector('[data-js="answer-text-1"]');
-let answerButtonOne = document.querySelector('[data-js="answer-button-1"]');
 
-answerButtonOne.addEventListener("click", () => {
-    answerTextOne.classList.toggle("answer-text-hidden");
-});
 
-let answerTextTwo = document.querySelector('[data-js="answer-text-2"]');
-let answerButtonTwo = document.querySelector('[data-js="answer-button-2"]');
+let questionInput = document.querySelector("#galaxy-question");
+let questionCounter = document.querySelector("#counter-1");
 
-answerButtonTwo.addEventListener("click", () => {
-    answerTextTwo.classList.toggle("answer-text-hidden");
-});
 
-let answerTextThree = document.querySelector('[data-js="answer-text-3"]');
-let answerButtonThree = document.querySelector('[data-js="answer-button-3"]');
+questionInput.addEventListener("input", () => {
+    let Text = questionInput.value;
+    let textLength = Text.length;
+    questionCounter.innerHTML = textLength + ' / 500';
+ });
 
-answerButtonThree.addEventListener("click", () => {
-    answerTextThree.classList.toggle("answer-text-hidden");
-});
+
+
+
+
+

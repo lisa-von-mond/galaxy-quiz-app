@@ -5,6 +5,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=>, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
+    <script language="javascript" type="text/javascript" src="script.js" defer></script>
     <title>Document</title>
 </head>
 <body>
@@ -22,19 +23,27 @@
             <p class="light-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit incidunt doloremque, tenetur eaque voluptatum.</p>
 
             <form class="galaxy-form" aria-labelledby="Send your question" aria-describedby="you can send me your own question to be part of my quiz">
-                
+                <div class="field-question-1">
                     <label class="label" for="galaxy-question">Your question</label>
-                    <input type="text" name="galaxy-question" id="galaxy-question" class="form-input" required placeholder="type your question here"></input>
+                    <input type="text" name="galaxy-question" id="galaxy-question" class="form-input" data-js="input-1" required placeholder="type your question here" cols="20" rows="5">
+                    </input>
+                    <div class="counter" id="counter-1" js-data="text-counter-1">0 / 500</div>
+                </div>
+                <div class="field-question-2">
                     <label class="label" for="galaxy-answer">Your answer</label>
                     <input type="text" name="galaxy-answer" id="galaxy-answer" class="form-input" required placeholder="type your answer here"></input>
+                    <div class="counter" js-data="text-counter-2">0 / 500</div>
+                 </div>
+                 <div class="field-question-3"> 
                     <label class="label" for="galaxy-tags">Yourr tags</label>
                     <input type="text" name="galaxy-tags" id="galaxy-tags" class="form-input" required placeholder="type your tags here, separated by a comma"></input>
-    
+                    <div class="counter" js-data="text-counter-3">0 / 500</div>
+                </div>
             </form>
             
     
-<div class="show-answer-button">
-    <button>submit</button>
+<div class="submit-button">
+    <button id="test">submit</button>
         </div>
 
 </section>
