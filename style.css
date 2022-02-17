@@ -10,7 +10,7 @@
   --favcolor: blanchedalmond;
   --maincolor: rgb(225, 115, 235);
   --darkcolor: black;
-  --highlight: rgba(255, 255, 255, 1);
+  --highlight: rgb(255, 255, 255);
   --acccolor: hotpink;
   --bmcolor: rgb(24, 139, 206);
   --border: 2px;
@@ -72,9 +72,7 @@ header {
   background: var(--gradient2);
   border: var(--border) solid var(--maincolor);
   border-radius: 40px;
-  grid-column-start: 2;
-  grid-column-end: 3;
-  border-radius: 40px;
+  grid-column: 2/3;
   display: flex;
   justify-content: center;
 }
@@ -149,7 +147,7 @@ footer {
 }
 
 .footer-element:hover {
-  box-shadow: 0px 0px 8px 2px var(--highlight);
+  box-shadow: 0 0 8px 2px var(--highlight);
 }
 
 footer {
@@ -198,7 +196,6 @@ footer a {
     bottom: 0;
     height: 60vh;
     width: 20vh;
-
     padding-right: 5vh;
     padding-bottom: 5vh;
   }
