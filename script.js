@@ -7,7 +7,16 @@ let questionCounter = document.querySelector("#counter-1");
 questionInput.addEventListener("input", () => {
     let Text = questionInput.value;
     let textLength = Text.length;
-    questionCounter.innerHTML = textLength + ' / 500';
+    
+    if (textLength>99){
+        questionCounter.textContent = 'MAX';
+        questionCounter.classList.add("attention");
+
+    } else {
+        questionCounter.textContent = textLength + ' / 500';
+        questionCounter.classList.remove("attention");
+    };
+
  });
 
 

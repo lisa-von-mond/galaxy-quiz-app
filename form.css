@@ -39,15 +39,24 @@
   margin-bottom: 30px;
 }
 
-.textarea {
+.textarea::placeholder {
   width: 100%;
+  font-family: 'DM Sans', sans-serif;
 }
 
 .shadow {
   box-shadow: 1em 1em 1em hotpink;
 }
 
-input {
+.attention {
+  color: aquamarine;
+  animation: blinker 1s linear infinite;
+}
+
+@keyframes blinker {
+  50% {
+    opacity: 0;
+  }
 }
 
 .counter {
