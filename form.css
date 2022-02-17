@@ -25,31 +25,21 @@
   color: var(--favcolor);
   font-size: 1.3rem;
   width: 100%;
-  padding: 40px;
+  padding: 7%;
   border-radius: 30px;
   margin-top: 10px;
   margin-bottom: 20px;
-  background: rgb(2, 0, 36);
-  background: linear-gradient(
-    35deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(120, 9, 121, 0.4598214285714286) 0%,
-    rgba(0, 212, 255, 0.2) 100%
-  );
+  background: var(--gradient1);
   margin-bottom: 30px;
-}
-
-.textarea::placeholder {
-  width: 100%;
   font-family: 'DM Sans', sans-serif;
+  font-size: 1rem;
 }
 
 .shadow {
-  box-shadow: 1em 1em 1em var(--hoghlight);
+  box-shadow: 1em 1em 1em var(--highlight);
 }
 
 .attention {
-  color: aquamarine;
   animation: blinker 1s linear infinite;
 }
 
@@ -64,6 +54,7 @@
   right: 7%;
   bottom: 20%;
   text-align: right;
+  color: var(--highlight);
 }
 
 .label {

@@ -144,7 +144,8 @@ footer {
 }
 
 .now {
-  color:var(--acccolor);)
+  color: var(--acccolor);
+  border: var(--border) solid var(--acccolor);
 }
 
 .footer-element:hover {
