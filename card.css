@@ -13,12 +13,7 @@
   margin-bottom: 20px;
   position: relative;
   background: rgb(2, 0, 36);
-  background: linear-gradient(
-    35deg,
-    rgba(2, 0, 36, 1) 0%,
-    rgba(120, 9, 121, 0.4598214285714286) 0%,
-    rgba(0, 212, 255, 0.2) 100%
-  );
+  background: var(--gradient1);
 }
 
 .show-answer-button {
@@ -31,13 +26,17 @@
 }
 
 button {
-  background-color: var(--);
-  color: var(--acccolor);
+  background: none;
+  border: var(--border) solid var(--highlight);
+  color: var(--highlight);
   text-transform: uppercase;
   font-size: 1rem;
   height: 3rem;
   border-radius: 1.2rem;
   padding: 0.7rem;
+}
+
+button:hover {
   box-shadow: 0px 0px 8px 2px var(--highlight);
 }
 
@@ -98,7 +97,7 @@ p {
   top: -8%;
   left: 80%;
   font-size: 40px;
-  background-color: black;
+  background: var(--gradient2);
   border: var(--border) solid var(--favcolor);
   display: flex;
   justify-content: center;
@@ -108,17 +107,9 @@ p {
 
 .bookmarked {
   color: var(--acccolor);
-  height: 60px;
-  width: 60px;
-  position: absolute;
-  top: -8%;
-  left: 80%;
-  font-size: 40px;
-  background-color: var(--darkcolor);
   border: var(--border) solid var(--acccolor);
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  border-radius: 50%;
+}
+
+.bookmark:hover {
   box-shadow: 0px 0px 8px 2px var(--highlight);
 }

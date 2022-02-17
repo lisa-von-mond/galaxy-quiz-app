@@ -8,12 +8,20 @@
 
 :root {
   --favcolor: blanchedalmond;
-  --acccolor: rgb(225, 115, 235);
+  --maincolor: rgb(225, 115, 235);
   --darkcolor: black;
-  --highlight: orange;
+  --highlight: rgba(255, 255, 255, 0.829);
+  --acccolor: hotpink;
   --bmcolor: rgb(24, 139, 206);
   --border: 2px;
   --testborder: 0;
+  --gradient1: linear-gradient(
+    35deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(120, 9, 121, 0.4598214285714286) 0%,
+    rgba(0, 212, 255, 0.2) 100%
+  );
+  --gradient2: linear-gradient(35deg, rgb(7, 4, 49) 50%, rgb(41, 7, 32) 100%);
 }
 
 body {
@@ -31,7 +39,7 @@ body {
 }
 
 .h1-upper {
-  color: var(--acccolor);
+  color: var(--maincolor);
 }
 
 h2 {
@@ -61,15 +69,14 @@ header {
 }
 
 .headline-container {
-  background-color: var(--darkcolor);
-  border: var(--border) solid var(--acccolor);
+  background: var(--gradient2);
+  border: var(--border) solid var(--maincolor);
   border-radius: 40px;
   grid-column-start: 2;
   grid-column-end: 3;
   border-radius: 40px;
   display: flex;
   justify-content: center;
-  background-color: black;
 }
 
 /*RESP LAYOUT GENERAL*/
@@ -128,12 +135,20 @@ footer {
   font-size: 30px;
   height: 70px;
   width: 70px;
-  border: var(--border) solid var(--acccolor);
+  border: var(--border) solid var(--maincolor);
   display: flex;
   justify-content: center;
   align-items: center;
   border-radius: 50%;
-  background-color: var(--darkcolor);
+  background: var(--gradient2);
+}
+
+.now {
+  color:var(--acccolor);)
+}
+
+.footer-element:hover {
+  box-shadow: 0px 0px 8px 2px var(--highlight);
 }
 
 footer {
@@ -154,7 +169,7 @@ footer {
 
 footer a {
   text-decoration: none;
-  color: var(--acccolor);
+  color: var(--maincolor);
 }
 
 /*FOOTER END*/

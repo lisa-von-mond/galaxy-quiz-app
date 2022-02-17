@@ -45,7 +45,7 @@
 }
 
 .shadow {
-  box-shadow: 1em 1em 1em hotpink;
+  box-shadow: 1em 1em 1em var(--hoghlight);
 }
 
 .attention {
@@ -84,18 +84,6 @@
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  border: var(--testborder) solid yellow;
   padding-top: 1.6rem;
   padding-bottom: 1.6rem;
-}
-
-button {
-  background-color: var(--);
-  color: var(--acccolor);
-  text-transform: uppercase;
-  font-size: 1rem;
-  height: 3rem;
-  border-radius: 1.2rem;
-  padding: 0.7rem;
-  box-shadow: 0px 0px 8px 2px orange;
 }
