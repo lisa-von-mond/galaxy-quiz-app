@@ -10,6 +10,7 @@
   --favcolor: blanchedalmond;
   --acccolor: rgb(225, 115, 235);
   --darkcolor: black;
+  --highlight: orange;
   --bmcolor: rgb(24, 139, 206);
   --border: 2px;
   --testborder: 0;
@@ -31,12 +32,6 @@ body {
 
 .h1-upper {
   color: var(--acccolor);
-}
-
-.h1-shadow {
-  color: hotpink;
-  font-weight: strong;
-  margin-top: -100px;
 }
 
 h2 {
@@ -87,7 +82,7 @@ footer {
 }
 
 .first {
-  margin-top: 25vh;
+  margin-top: 22vh;
 }
 
 .last {
@@ -159,7 +154,7 @@ footer {
 
 footer a {
   text-decoration: none;
-  color: hotpink;
+  color: var(--acccolor);
 }
 
 /*FOOTER END*/
