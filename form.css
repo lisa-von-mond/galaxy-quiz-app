@@ -14,8 +14,7 @@
 }
 
 .form-frame {
-  grid-column-start: 2;
-  grid-column-end: 3;
+  grid-column: 2/3;
 }
 
 .form-input {
@@ -23,14 +22,12 @@
   min-height: 200px;
   text-align: left;
   color: var(--favcolor);
-  font-size: 1.3rem;
   width: 100%;
   padding: 7%;
   border-radius: 30px;
   margin-top: 10px;
   margin-bottom: 20px;
   background: var(--gradient1);
-  margin-bottom: 30px;
   font-family: 'DM Sans', sans-serif;
   font-size: 1rem;
 }

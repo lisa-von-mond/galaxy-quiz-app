@@ -10,7 +10,7 @@
   --favcolor: blanchedalmond;
   --maincolor: rgb(225, 115, 235);
   --darkcolor: black;
-  --highlight: rgba(255, 255, 255, 0.829);
+  --highlight: rgba(255, 255, 255, 1);
   --acccolor: hotpink;
   --bmcolor: rgb(24, 139, 206);
   --border: 2px;
@@ -18,8 +18,8 @@
   --gradient1: linear-gradient(
     35deg,
     rgba(2, 0, 36, 1) 0%,
-    rgba(120, 9, 121, 0.4598214285714286) 0%,
-    rgba(0, 212, 255, 0.2) 100%
+    rgba(120, 9, 121, 30%) 0%,
+    rgba(0, 212, 255, 20%) 100%
   );
   --gradient2: linear-gradient(35deg, rgb(7, 4, 49) 50%, rgb(41, 7, 32) 100%);
 }
@@ -57,7 +57,7 @@ h3 {
   color: var(--favcolor);
 }
 
-/*HEADER*/
+/* HEADER */
 
 header {
   position: fixed;
@@ -79,7 +79,7 @@ header {
   justify-content: center;
 }
 
-/*RESP LAYOUT GENERAL*/
+/* RESP LAYOUT GENERAL */
 
 header,
 .grid,
@@ -127,9 +127,9 @@ footer {
   }
 }
 
-/*END // RESP LAYOUT GENERAL*/
+/* END // RESP LAYOUT GENERA */
 
-/*FOOTER*/
+/* FOOTER */
 
 .footer-element {
   font-size: 30px;
@@ -173,14 +173,13 @@ footer a {
   color: var(--maincolor);
 }
 
-/*FOOTER END*/
+/* FOOTER END */
 
-/*RESPONSIVE LARGE DEVICES*/
+/* RESPONSIVE LARGE DEVICES */
 
 @media only screen and (min-width: 800px) {
   .headline-container {
-    grid-column-start: 1;
-    grid-column-end: 2;
+    grid-column: 1/2;
     aspect-ratio: 1;
     border-radius: 50%;
     display: flex;
