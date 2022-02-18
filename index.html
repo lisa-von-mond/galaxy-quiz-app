@@ -5,30 +5,33 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=>, initial-scale=1.0">
     <link rel="stylesheet" href="/style.css">
-    <script language="javascript" type="text/javascript" src="card.js" defer></script>
+    <script language="javascript" type="module" src="/script.js" defer></script>
     <title>Document</title>
 </head>
 <body>
     <header>
 <div class="headline-container">
-<h1 class="h1-upper">GALAXY QUIZ</h1>
+<h1>GALAXY QUIZ</h1>
 
 </div>
     </header>
 
 <main>
-    <section class="grid">
+    <section class="grid" js-data="home">
 
 
         <div class="card first">
-            <div class="bookmark" js-data="bookmark-first">✰</div>
-
+            <div js-data="bookmark-area">
+            <div class="bookmark" js-data="bookmark">✰</div>
+          </div>
             <h2>What is your favourite planet?</h2>
             <p class="question-text">For over 1000 years, Jedis and space bees have fightened for freedom in all galaxies in our universe. Name your favourite planet of this cosmos!</p>
-            <div class="show-answer-button" data-js="answer-button-1">
+            <div data-js="answer-block">
+            <div class="show-answer-button" data-js="answer-button">
                 <button>show answer</button>
             </div>
-            <p class="answer-text answer-text-hidden" data-js="answer-text-1">Sorry little astronaut, that's a question you have to answer yourself =)</p>
+            <p class="answer-text answer-text-hidden" data-js="answer-text">Sorry little astronaut, that's a question you have to answer yourself =)</p>
+            </div>
             <div class="tags">
                 <div class="tag">ONE</div>
                 <div class="tag">TWO</div>
@@ -40,36 +43,18 @@
             </div>
         </div>
 
-        <div class="card second">
-            <div class="bookmark" js-data="bookmark-second">✰</div>
-            
+        <div class="card">
+            <div js-data="bookmark-area">
+            <div class="bookmark" js-data="bookmark">✰</div>
+          </div>
             <h2>Where is Luke Skywalker?</h2>
             <p class="question-text">After the dark side snapped the force, Luke decided to go for new adventures on lonely planets. Where was he hiding?</p>
-            <div class="show-answer-button" data-js="answer-button-2">
+            <div data-js="answer-block">
+            <div class="show-answer-button" data-js="answer-button">
                 <button>show answer</button>
             </div>
-            <p class="answer-text answer-text-hidden" data-js="answer-text-2">Try to ask the NASA, maybe they know.</p>
-            <div class="tags">
-                <div class="tag">ONE</div>
-                <div class="tag">TWO</div>
-                <div class="tag">THREE</div>
-                <div class="tag">FOUR</div>
-                <div class="tag">FIVE</div>
-                <div class="tag">SIX</div>
-                <div class="tag">SEVEN</div>
+            <p class="answer-text answer-text-hidden" data-js="answer-text">Try to ask the NASA, maybe they know.</p>
             </div>
-        
-        </div>
-        
-        <div class="card third last">
-            <div class="bookmark" js-data="bookmark-third">✰</div>
-            
-            <h2>How many moons fly around Saturn?</h2>
-            <p class="question-text">Saturn is one of the biggest and most sexy planets in our solar system. She would be lonely without her moons. Count them!</p>
-            <div class="show-answer-button" data-js="answer-button-3">
-                <button>show answer</button>
-            </div>
-            <p class="answer-text answer-text-hidden" data-js="answer-text-3">82 moons, ciao!</p>
             <div class="tags">
                 <div class="tag">ONE</div>
                 <div class="tag">TWO</div>
@@ -81,8 +66,38 @@
             </div>
         </div>
 
+        <div class="card last">
+            <div js-data="bookmark-area">
+            <div class="bookmark" js-data="bookmark">✰</div>
+          </div>
+            <h2>ow many moons fly around Saturn?</h2>
+            <p class="question-text">Saturn is one of the biggest and most sexy planets in our solar system. She would be lonely without her moons. Count them!</p>
+            <div data-js="answer-block">
+            <div class="show-answer-button" data-js="answer-button">
+                <button>show answer</button>
+            </div>
+            <p class="answer-text answer-text-hidden" data-js="answer-text">82 moons, ciao!</p>
+            </div>
+            <div class="tags">
+                <div class="tag">ONE</div>
+                <div class="tag">TWO</div>
+                <div class="tag">THREE</div>
+                <div class="tag">FOUR</div>
+                <div class="tag">FIVE</div>
+                <div class="tag">SIX</div>
+                <div class="tag">SEVEN</div>
+            </div>
+        </div>
+
+
+        
+        
+        
+
     </section>
+
  </main>
+
  <footer>
     <nav class="footer-item-container">
     <a href="/index.html"><div class="footer-element now">⌂</div></a>
