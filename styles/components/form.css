@@ -15,6 +15,7 @@
 
 .form-frame {
   grid-column: 2/3;
+  display: inherit;
 }
 
 .form-input {

@@ -1,110 +1,185 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=>, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=>, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
     <script language="javascript" type="module" src="/script.js" defer></script>
     <title>Document</title>
-</head>
-<body>
-    <header>
-<div class="headline-container">
-<h1>GALAXY QUIZ</h1>
+  </head>
 
-</div>
+  <body>
+    <header>
+      <div class="headline-container">
+        <h1>GALAXY QUIZ</h1>
+      </div>
     </header>
 
-<main>
-    <section class="grid" js-data="home">
-
-
-        <div class="card first">
-            <div js-data="bookmark-area">
+    <main>
+      <section class="grid">
+        <div class="card first menu-active">
+          <div js-data="bookmark-area">
             <div class="bookmark" js-data="bookmark">✰</div>
           </div>
-            <h2>What is your favourite planet?</h2>
-            <p class="question-text">For over 1000 years, Jedis and space bees have fightened for freedom in all galaxies in our universe. Name your favourite planet of this cosmos!</p>
-            <div data-js="answer-block">
+          <h2>What is your favourite planet?</h2>
+          <p class="question-text">
+            For over 1000 years, Jedis and space bees have fightened for freedom
+            in all galaxies in our universe. Name your favourite planet of this
+            cosmos!
+          </p>
+          <div data-js="answer-block">
             <div class="show-answer-button" data-js="answer-button">
-                <button>show answer</button>
+              <button>show answer</button>
             </div>
-            <p class="answer-text answer-text-hidden" data-js="answer-text">Sorry little astronaut, that's a question you have to answer yourself =)</p>
-            </div>
-            <div class="tags">
-                <div class="tag">ONE</div>
-                <div class="tag">TWO</div>
-                <div class="tag">THREE</div>
-                <div class="tag">FOUR</div>
-                <div class="tag">FIVE</div>
-                <div class="tag">SIX</div>
-                <div class="tag">SEVEN</div>
-            </div>
+            <p class="answer-text answer-text-hidden" data-js="answer-text">
+              Sorry little astronaut, that's a question you have to answer
+              yourself =)
+            </p>
+          </div>
+          <div class="tags">
+            <div class="tag">ONE</div>
+            <div class="tag">TWO</div>
+            <div class="tag">THREE</div>
+            <div class="tag">FOUR</div>
+            <div class="tag">FIVE</div>
+            <div class="tag">SIX</div>
+            <div class="tag">SEVEN</div>
+          </div>
         </div>
 
-        <div class="card">
-            <div js-data="bookmark-area">
+        <div class="card menu-active" js-data="card">
+          <div js-data="bookmark-area">
             <div class="bookmark" js-data="bookmark">✰</div>
           </div>
-            <h2>Where is Luke Skywalker?</h2>
-            <p class="question-text">After the dark side snapped the force, Luke decided to go for new adventures on lonely planets. Where was he hiding?</p>
-            <div data-js="answer-block">
+          <h2>Where is Luke Skywalker?</h2>
+          <p class="question-text">
+            After the dark side snapped the force, Luke decided to go for new
+            adventures on lonely planets. Where was he hiding?
+          </p>
+          <div data-js="answer-block">
             <div class="show-answer-button" data-js="answer-button">
-                <button>show answer</button>
+              <button>show answer</button>
             </div>
-            <p class="answer-text answer-text-hidden" data-js="answer-text">Try to ask the NASA, maybe they know.</p>
-            </div>
-            <div class="tags">
-                <div class="tag">ONE</div>
-                <div class="tag">TWO</div>
-                <div class="tag">THREE</div>
-                <div class="tag">FOUR</div>
-                <div class="tag">FIVE</div>
-                <div class="tag">SIX</div>
-                <div class="tag">SEVEN</div>
-            </div>
+            <p class="answer-text answer-text-hidden" data-js="answer-text">
+              Try to ask the NASA, maybe they know.
+            </p>
+          </div>
+          <div class="tags">
+            <div class="tag">ONE</div>
+            <div class="tag">TWO</div>
+            <div class="tag">THREE</div>
+            <div class="tag">FOUR</div>
+            <div class="tag">FIVE</div>
+            <div class="tag">SIX</div>
+            <div class="tag">SEVEN</div>
+          </div>
         </div>
 
-        <div class="card last">
-            <div js-data="bookmark-area">
+        <div class="card last menu-active" js-data="card">
+          <div js-data="bookmark-area">
             <div class="bookmark" js-data="bookmark">✰</div>
           </div>
-            <h2>ow many moons fly around Saturn?</h2>
-            <p class="question-text">Saturn is one of the biggest and most sexy planets in our solar system. She would be lonely without her moons. Count them!</p>
-            <div data-js="answer-block">
+          <h2>ow many moons fly around Saturn?</h2>
+          <p class="question-text">
+            Saturn is one of the biggest and most sexy planets in our solar
+            system. She would be lonely without her moons. Count them!
+          </p>
+          <div data-js="answer-block">
             <div class="show-answer-button" data-js="answer-button">
-                <button>show answer</button>
+              <button>show answer</button>
             </div>
-            <p class="answer-text answer-text-hidden" data-js="answer-text">82 moons, ciao!</p>
-            </div>
-            <div class="tags">
-                <div class="tag">ONE</div>
-                <div class="tag">TWO</div>
-                <div class="tag">THREE</div>
-                <div class="tag">FOUR</div>
-                <div class="tag">FIVE</div>
-                <div class="tag">SIX</div>
-                <div class="tag">SEVEN</div>
-            </div>
+            <p class="answer-text answer-text-hidden" data-js="answer-text">
+              82 moons, ciao!
+            </p>
+          </div>
+          <div class="tags">
+            <div class="tag">ONE</div>
+            <div class="tag">TWO</div>
+            <div class="tag">THREE</div>
+            <div class="tag">FOUR</div>
+            <div class="tag">FIVE</div>
+            <div class="tag">SIX</div>
+            <div class="tag">SEVEN</div>
+          </div>
         </div>
 
+        <div class="form-frame last menu-active" js-data="form">
+          <h2 class="light-text">Send your question!</h2>
+          <p class="light-text">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit.
+            Reprehenderit incidunt doloremque, tenetur eaque voluptatum.
+          </p>
+      
+          <form
+            class="galaxy-form"
+            aria-labelledby="Send your question"
+            aria-describedby="you can send me your own question to be part of my quiz"
+          >
+            <div class="field-question-1">
+              <label class="label" for="galaxy-question">Your question</label>
+              <textarea
+                type="text"
+                name="textarea-q"
+                id="textarea-q"
+                required
+                placeholder="your question goes here"
+                cols="20"
+                rows="5"
+                js-data="textarea-q"
+                class="form-input"
+                maxlength="200"
+              ></textarea>
+              <div class="counter" js-data="counter-q">0 / 200</div>
+            </div>
+            <div class="field-question-2">
+              <label class="label" for="galaxy-answer">Your answer</label>
+              <textarea
+                type="text"
+                name="textarea-a"
+                id="textarea-a"
+                required
+                placeholder="your answer goes here"
+                cols="20"
+                rows="5"
+                js-data="textarea-a"
+                class="form-input"
+                maxlength="200"
+              ></textarea>
+              <div class="counter" js-data="counter-a">0 / 200</div>
+            </div>
+            <div class="field-question-3">
+              <label class="label" for="galaxy-tags">Your tags</label>
+              <textarea
+                type="text"
+                name="textarea-q"
+                id="galaxy-q"
+                required
+                placeholder="your tags go here"
+                cols="20"
+                rows="5"
+                data-js="input-q"
+                class="form-input"
+                maxlength="200"
+              ></textarea>
+              <div class="counter" js-data="counter-t">0 / 200</div>
+            </div>
+          </form>
 
-        
-        
-        
+          <div class="submit-button">
+            <button id="test">submit</button>
+          </div>
+        </div>
+      </section>
+    </main>
 
-    </section>
-
- </main>
-
- <footer>
-    <nav class="footer-item-container">
-    <a href="/index.html"><div class="footer-element now">⌂</div></a>
-    <a><div class="footer-element">✰</div></a>
-    <a href="/form.html"><div class="footer-element">?</div></a>
-    <a><div class="footer-element">✺</div></a>
-    </nav>
-</footer>
-</body>
+    <footer>
+      <nav class="footer-item-container">
+            <div class="footer-element" data-js="menu-home">⌂</div>
+            <div class="footer-element">✰</div>
+            <div class="footer-element" data-js="menu-form">?</div>
+            <div class="footer-element">✺</div>
+      </nav>
+    </footer>
+  </body>
 </html>

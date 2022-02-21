@@ -1,64 +1,96 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="/style.css">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="/style.css" />
     <script language="javascript" type="module" src="script.js" defer></script>
     <title>Document</title>
-    <link rel="stylesheet" href="/styles/base.css">
-
-</head>
-<body>
-
+    <link rel="stylesheet" href="/styles/base.css" />
+  </head>
+  <body>
     <header>
-        <div class="headline-container">
-            <h1 class="h1-upper">GALAXY QUIZ</h1>
-        </div>
+      <div class="headline-container">
+        <h1 class="h1-upper">GALAXY QUIZ</h1>
+      </div>
     </header>
-    <section class="grid"> 
+    <section class="grid" js-data="form">
+      <div class="form-frame first last">
+        <h2 class="light-text">Send your question!</h2>
+        <p class="light-text">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit
+          incidunt doloremque, tenetur eaque voluptatum.
+        </p>
 
-        <div class="form-frame first last">
-            <h2 class="light-text">Send your question!</h2>
-            <p class="light-text">Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit incidunt doloremque, tenetur eaque voluptatum.</p>
+        <form
+          class="galaxy-form"
+          aria-labelledby="Send your question"
+          aria-describedby="you can send me your own question to be part of my quiz"
+        >
+          <div class="field-question-1">
+            <label class="label" for="galaxy-question">Your question</label>
+            <textarea
+              type="text"
+              name="textarea-q"
+              id="textarea-q"
+              required
+              placeholder="your question goes here"
+              cols="20"
+              rows="5"
+              js-data="textarea-q"
+              class="form-input"
+              maxlength="200"
+            ></textarea>
+            <div class="counter" js-data="counter-q">0 / 200</div>
+          </div>
+          <div class="field-question-2">
+            <label class="label" for="galaxy-answer">Your answer</label>
+            <textarea
+              type="text"
+              name="textarea-a"
+              id="textarea-a"
+              required
+              placeholder="your answer goes here"
+              cols="20"
+              rows="5"
+              js-data="textarea-a"
+              class="form-input"
+              maxlength="200"
+            ></textarea>
+            <div class="counter" js-data="counter-a">0 / 200</div>
+          </div>
+          <div class="field-question-3">
+            <label class="label" for="galaxy-tags">Your tags</label>
+            <textarea
+              type="text"
+              name="textarea-q"
+              id="galaxy-q"
+              required
+              placeholder="your tags go here"
+              cols="20"
+              rows="5"
+              data-js="input-q"
+              class="form-input"
+              maxlength="200"
+            ></textarea>
+            <div class="counter" js-data="counter-t">0 / 200</div>
+          </div>
+        </form>
 
-            <form class="galaxy-form" aria-labelledby="Send your question" aria-describedby="you can send me your own question to be part of my quiz">
-                <div class="field-question-1">
-                    <label class="label" for="galaxy-question">Your question</label>
-                    <textarea type="text" name="textarea-q" id="textarea-q" required placeholder="your question goes here" cols="20" rows="5" js-data="textarea-q" class="form-input" maxlength="200"></textarea>
-                    <div class="counter" js-data="counter-q">0 / 200
-                    </div>
-                </div>
-                <div class="field-question-2">
-                    <label class="label" for="galaxy-answer">Your answer</label>
-                    <textarea type="text" name="textarea-a" id="textarea-a" required placeholder="your answer goes here" cols="20" rows="5" js-data="textarea-a" class="form-input" maxlength="200"></textarea>
-                    <div class="counter" js-data="counter-a">0 / 200</div>
-                 </div>
-                 <div class="field-question-3"> 
-                    <label class="label" for="galaxy-tags">Your tags</label>
-                    <textarea type="text" name="textarea-q" id="galaxy-q" required placeholder="your tags go here" cols="20" rows="5" data-js="input-q" class="form-input" maxlength="200"></textarea>
-                    <div class="counter" js-data="counter-t">0 / 200</div>
-                </div>
-            </form>
-
-            <div class="submit-button">
-                <button id="test">submit</button>
-                </div>
-
+        <div class="submit-button">
+          <button id="test">submit</button>
         </div>
+      </div>
+    </section>
 
-        </section>
-        
- <footer>
-    <nav class="footer-item-container">
+    <footer>
+      <nav class="footer-item-container">
         <a href="/index.html"><div class="footer-element">⌂</div></a>
         <a><div class="footer-element">✰</div></a>
         <a href="/form.html"><div class="footer-element now">?</div></a>
         <a><div class="footer-element">✺</div></a>
-    </nav>
-</footer>
-
-
-</body>
+      </nav>
+    </footer>
+  </body>
 </html>

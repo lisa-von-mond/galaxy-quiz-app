@@ -38,6 +38,17 @@ body {
   width: 100%;
 }
 
+.menu-inactive {
+  display: none;
+}
+
+.menu-active {
+  display: visible;
+}
+
+h2 {
+}
+
 h1 {
   color: var(--maincolor);
 }
@@ -62,7 +73,7 @@ h3 {
 header {
   position: fixed;
   top: 3vw;
-  height: 10vh;
+  height: 0;
   width: 100%;
   margin: 0;
   z-index: 1;
@@ -164,17 +175,13 @@ footer {
     height: 50px;
     width: 50px;
     border: var(--border) solid var(--maincolor);
+    color: var(--maincolor);
     display: flex;
     justify-content: center;
     align-items: center;
     border-radius: 50%;
     background: var(--gradient2);
   }
-}
-
-.now {
-  color: var(--acccolor);
-  border: var(--border) solid var(--acccolor);
 }
 
 .footer-element:hover {
@@ -236,5 +243,9 @@ footer a {
     justify-content: flex-end;
     gap: 1.6em;
     align-items: flex-end;
+  }
+
+  .shadow {
+    box-shadow: 0 0 10px 10px yellow;
   }
 }

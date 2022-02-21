@@ -1,10 +1,9 @@
 export default {
-    title: "components/card",
+  title: 'components/card',
 };
 
-
 export const Default = () =>
-`<div class="card first">
+  `<div class="card first">
 <div class="question-text">
     <h2>What is your favourite planet?</h2>
     <p>For over 1000 years, Jedis and space bees have fightened for freedom in all galaxies in our universe. Name your favourite planet of this beautiful cosmos!</p>
@@ -24,8 +23,6 @@ export const Default = () =>
 </div>
 `;
 
-import DefaultHtml from "./card1.html";
+import DefaultHtml from './card1.html';
 
 export const Card1 = () => DefaultHtml;
-
-
