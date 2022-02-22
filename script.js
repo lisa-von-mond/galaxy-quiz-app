@@ -1,12 +1,7 @@
-import {
-  questionInput,
-  answerInput,
-  questionCounter,
-  answerCounter,
-} from './js/components/form.js';
-import { answerBlock } from './js/components/card.js';
-import { bookMarkArea } from './js/components/bookmark.js';
-import { menuHome, menuForm } from './js/components/menu.js';
+import './js/components/form.js';
+import './js/components/card.js';
+import  './js/components/bookmark.js';
+import './js/components/menu.js';
 
 
 
