@@ -162,6 +162,7 @@ footer {
   height: 70px;
   width: 70px;
   border: var(--border) solid var(--maincolor);
+  color: var(--maincolor);
   display: flex;
   justify-content: center;
   align-items: center;
@@ -169,18 +170,15 @@ footer {
   background: var(--gradient2);
 }
 
+.now {
+  border: var(--border) solid var(--acccolor);
+  color: var(--acccolor);
+}
+
 @media only screen and (max-width: 500px) {
   .footer-element {
-    font-size: 30px;
     height: 50px;
     width: 50px;
-    border: var(--border) solid var(--maincolor);
-    color: var(--maincolor);
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    border-radius: 50%;
-    background: var(--gradient2);
   }
 }
 

@@ -7,11 +7,14 @@
   justify-content: space-between;
   padding: 40px;
   border-radius: 50px;
-  grid-column: 2 / 3;
   margin-top: 40px;
   margin-bottom: 20px;
   position: relative;
   background: var(--gradient1);
+}
+
+.all-cards {
+  grid-column: 2 / 3;
 }
 
 .show-answer-button {
@@ -103,8 +106,8 @@ p {
   height: 60px;
   width: 60px;
   position: absolute;
-  top: -8%;
-  left: 80%;
+  top: -20px;
+  right: -20px;
   font-size: 40px;
   background: var(--gradient2);
   border: var(--border) solid var(--favcolor);
